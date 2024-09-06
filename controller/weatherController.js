@@ -29,7 +29,7 @@ const getGreeting = (sunrise, sunset, timezone) => {
 
 module.exports = {
   //api for greating 
-  GreatingUserSetup:async (req, res) => {
+  greetingUser:async (req, res) => {
     const { lat, lon } = req.query;
   
     try {
