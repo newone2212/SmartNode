@@ -15,7 +15,7 @@ app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({extended:false}));
 
 const routes = require("./routes/weatherRoutes");
-app.use('/api', routes)
+app.use('/api/weather', routes)
 
 
 app.use((err,req,res,next)=>{
